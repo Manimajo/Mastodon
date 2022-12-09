@@ -18,4 +18,4 @@ yarn set version classic
 
 adduser --disabled-login mastodon
 
-su - mastodon
+sudo -u mastodon
