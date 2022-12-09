@@ -10,7 +10,7 @@ echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
 git clone https://github.com/rbenv/ruby-build.git /home/mastodon/.rbenv/plugins/ruby-build
 
-cd /home/mastodon/
+cd /home/mastodon/.rbenv/
 
 RUBY_CONFIGURE_OPTS=--with-jemalloc rbenv install 3.0.4
 
