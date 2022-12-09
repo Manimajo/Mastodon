@@ -5,3 +5,5 @@ sudo -u postgres psql
 CREATE USER mastodon CREATEDB;
 
 \q
+
+su - mastodon
