@@ -12,7 +12,7 @@ git clone https://github.com/rbenv/ruby-build.git /home/mastodon/.rbenv/plugins/
 
 cd /home/mastodon/.rbenv/
 
-rbenv install 3.0.4
+rbenv install 3.0.4 /home/mastodon/.rbenv/
 
 rbenv global 3.0.4
 
