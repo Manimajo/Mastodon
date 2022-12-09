@@ -15,3 +15,5 @@ yarn install --pure-lockfile
 export RAILS_ENV=production
 
 bundle exec rake mastodon:setup
+
+exit
