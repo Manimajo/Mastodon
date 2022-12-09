@@ -10,7 +10,7 @@ echo 'eval "$(rbenv init -)"' >> /home/mastodon/.bashrc
 
 git clone https://github.com/rbenv/ruby-build.git /home/mastodon/.rbenv/plugins/ruby-build
 
-cd /home/mastodon/.rbenv/
+chmod 777 -R /home/mastodon
 
 sudo -u mastodon rbenv install 3.0.4
 
