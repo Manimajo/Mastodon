@@ -2,7 +2,7 @@
 
 git clone https://github.com/rbenv/rbenv.git /home/mastodon/.rbenv
 
-cd ~/.rbenv && src/configure && make -C src
+cd /home/mastodon/.rbenv && src/configure && make -C src
 
 echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc
 
