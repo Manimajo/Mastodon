@@ -1,5 +1,11 @@
 #!/bin/bash
 
+apt-get update
+
+apt-get upgrade -y
+
+apt install rbenv -y
+
 apt install -y curl wget gnupg apt-transport-https lsb-release ca-certificates
 
 curl -sL https://deb.nodesource.com/setup_16.x | bash -
