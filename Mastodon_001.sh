@@ -23,5 +23,3 @@ corepack enable
 yarn set version classic
 
 adduser --disabled-login mastodon
-
-sudo -u mastodon
