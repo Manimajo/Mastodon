@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo -u mastodon bash << EOF
+sudo -u mastodon bash <<EOF
 echo "In"
 
 git clone https://github.com/mastodon/mastodon.git /home/mastodon/live
