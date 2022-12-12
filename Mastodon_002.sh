@@ -25,5 +25,3 @@ chmod 777 /usr/*
 chmod 777 /usr/local/*
 
 sudo -u mastodon gem install bundler --no-document
-
-exit
