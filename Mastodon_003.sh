@@ -2,6 +2,8 @@
 
 sudo -u postgres psql
 
-CREATE USER mastodon CREATEDB;
+sudo -u postgres CREATE USER mastodon CREATEDB;
 
-\q
+sudo -u postgres \q
+
+exit
