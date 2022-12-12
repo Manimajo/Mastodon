@@ -4,7 +4,7 @@ cp /home/mastodon/live/dist/nginx.conf /etc/nginx/sites-available/mastodon
 
 ln -s /etc/nginx/sites-available/mastodon /etc/nginx/sites-enabled/mastodon
 
-sed -i 's/example.com/mastodon.impulsreha.local/g' /etc/nginx/sites-available/mastodon.conf
+sed -i 's/example.com/mastodon.impulsreha.local/g' /etc/nginx/sites-available/mastodon
 
 cd
 
