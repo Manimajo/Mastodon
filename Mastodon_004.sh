@@ -1,5 +1,8 @@
 #!/bin/bash
 
+sudo -u mastodon bash << EOF
+echo "In"
+
 sudo -u mastodon git clone https://github.com/mastodon/mastodon.git /home/mastodon/live
 
 sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
@@ -13,3 +16,6 @@ sudo -u mastodon yarn install --pure-lockfile
 sudo -u mastodon export RAILS_ENV=production
 
 sudo -u mastodon bundle exec rake mastodon:setup
+
+echo "Out"
+EOF
