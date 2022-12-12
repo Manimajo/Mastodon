@@ -12,6 +12,4 @@ sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 sudo -u mastodon yarn install --pure-lockfile
 
-sudo -u mastodon export RAILS_ENV=production
-
-sudo -u mastodon bundle exec rake mastodon:setup
+sudo -u mastodon RAILS_ENV=production bundle exec rake mastodon:setup
