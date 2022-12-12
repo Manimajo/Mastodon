@@ -1,6 +1,8 @@
 #!/bin/bash
 
-cd /home/mastodon/live
+sudo -u mastodon bash << EOF
+
+cd live
 
 git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
@@ -8,8 +10,10 @@ bundle config deployment 'true'
 
 bundle config without 'development test'
 
-sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
+bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
 sudo -u mastodon RAILS_ENV=production bundle exec rake mastodon:setup
+
+EOF
