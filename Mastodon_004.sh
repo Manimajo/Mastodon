@@ -2,8 +2,6 @@
 
 sudo -u mastodon git clone https://github.com/mastodon/mastodon.git /home/mastodon/live
 
-cd /home/mastodon/live
-
 sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 sudo -u mastodon bundle config deployment 'true'
