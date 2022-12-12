@@ -1,6 +1,7 @@
 #!/bin/bash
 
-sudo -u mastodon bash
+sudo -u mastodon bash << EOF
+echo "In"
 
 git clone https://github.com/mastodon/mastodon.git live && cd live
 
@@ -15,3 +16,6 @@ bundle install -j$(getconf _NPROCESSORS_ONLN)
 yarn install --pure-lockfile
 
 RAILS_ENV=production bundle exec rake mastodon:setup
+
+echo "Out"
+EOF
