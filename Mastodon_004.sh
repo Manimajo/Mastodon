@@ -19,5 +19,5 @@ export RAILS_ENV=production
 
 bundle exec rake mastodon:setup
 
-echo "Out"
 EOF
+echo "Out"
