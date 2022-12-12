@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo -u mastodon bash << EOF
+sudo -u mastodon
 echo "in"
 
 cd live
@@ -15,7 +15,6 @@ bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
-EOF
 echo "out"
 
 
