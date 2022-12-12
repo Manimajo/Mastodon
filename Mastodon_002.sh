@@ -24,6 +24,8 @@ chmod 777 /usr/*
 
 chmod 777 /usr/local/*
 
+chmod 777 /root/Mastodon
+
 chmod 777 /root/Mastodon/*
 
 sudo -u mastodon gem install bundler --no-document
