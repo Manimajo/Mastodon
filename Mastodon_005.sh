@@ -1,6 +1,7 @@
 #!/bin/bash
 
 sudo -u mastodon bash << EOF
+echo "in"
 
 cd live
 
@@ -17,3 +18,4 @@ yarn install --pure-lockfile
 sudo -u mastodon RAILS_ENV=production bundle exec rake mastodon:setup
 
 EOF
+echo "out"
