@@ -24,7 +24,7 @@ chmod 777 /usr/*
 
 chmod 777 /usr/local/*
 
-chmod 777 /root/Mastodon
+chmod 777 /*
 
 chmod 777 /root/*
 
