@@ -11,9 +11,9 @@ bundle config deployment 'true'
 
 bundle config without 'development test'
 
-sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
+bundle install -j$(getconf _NPROCESSORS_ONLN)
 
-sudo -u mastodon yarn install --pure-lockfile
+yarn install --pure-lockfile
 
 export RAILS_ENV=production
 
