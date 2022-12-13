@@ -8,9 +8,9 @@ sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tai
 
 chmod 777 -R /home/mastodon
 
-bundle config deployment 'true'
+sudo -u mastodon bundle config deployment 'true'
 
-bundle config without 'development test'
+sudo -u mastodon bundle config without 'development test'
 
 sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
 
