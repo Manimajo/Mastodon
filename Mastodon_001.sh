@@ -24,4 +24,4 @@ corepack enable
 
 yarn set version classic
 
-adduser --disabled-login Mastodon
+adduser --disabled-login mastodon
