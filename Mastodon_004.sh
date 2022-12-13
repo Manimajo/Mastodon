@@ -8,13 +8,13 @@ sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tai
 
 chmod 777 -R /home/mastodon
 
-sudo -u mastodon bundle config deployment 'true'
+bundle config deployment 'true'
 
-sudo -u mastodon bundle config without 'development test'
+bundle config without 'development test'
 
-sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
+bundle install -j$(getconf _NPROCESSORS_ONLN)
 
-sudo -u mastodon yarn install --pure-lockfile
+yarn install --pure-lockfile
 
 chmod 777 -R /home/mastodon
 
