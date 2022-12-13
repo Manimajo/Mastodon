@@ -6,13 +6,13 @@ git clone https://github.com/mastodon/mastodon.git live && cd live
 
 git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
-bundle config deployment 'true'
+sudo -u Mastodon bundle config deployment 'true'
 
-bundle config without 'development test'
+sudo -u Mastodon bundle config without 'development test'
 
-bundle install -j$(getconf _NPROCESSORS_ONLN)
+sudo -u Mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
 
-yarn install --pure-lockfile
+sudo -u Mastodon yarn install --pure-lockfile
 
 chmod 777 -R /home/mastodon
 
