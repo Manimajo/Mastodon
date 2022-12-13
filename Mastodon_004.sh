@@ -14,6 +14,8 @@ bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
+chmod 777 -R /home/mastodon
+
 sudo -u mastodon RAILS_ENV=production bundle exec rake mastodon:setup
 
 cd /home/mastodon/Mastodon
