@@ -2,4 +2,4 @@
 
 cd /root/Mastodon
 
-./Mastodon_005.sh
+./Mastodon_Chmod.sh
