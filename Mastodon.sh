@@ -6,6 +6,6 @@
 
 ./Mastodon_003.sh
 
-./Mastodon_004.sh
+./Mastodon_Git-Clone.sh
 
 ./Mastodon_005.sh
