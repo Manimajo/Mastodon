@@ -4,7 +4,7 @@ cd ..
 
 git clone https://github.com/mastodon/mastodon.git live && cd live
 
-git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
+sudo -u Mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 sudo -u Mastodon bundle config deployment 'true'
 
