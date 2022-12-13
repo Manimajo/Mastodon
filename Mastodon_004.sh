@@ -4,7 +4,7 @@ cd ..
 
 git clone https://github.com/mastodon/mastodon.git live && cd live
 
-sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
+git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 chmod 777 -R /home/mastodon
 
