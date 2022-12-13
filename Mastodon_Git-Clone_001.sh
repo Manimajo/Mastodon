@@ -1,6 +1,6 @@
 #!/bin/bash
 
-git clone https://github.com/Manimajo/Mastodon /home/mastodon
+git clone https://github.com/Manimajo/Mastodon /home/mastodon/Mastodon
 
 cd /home/mastodon/Mastodon
 
