@@ -13,3 +13,7 @@ bundle install -j$(getconf _NPROCESSORS_ONLN)
 yarn install --pure-lockfile
 
 sudo -u mastodon RAILS_ENV=production bundle exec rake mastodon:setup
+
+cd /home/mastodon/Mastodon
+
+./Mastodon_Git-Clone_002.sh
