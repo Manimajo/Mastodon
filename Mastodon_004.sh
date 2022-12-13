@@ -1,18 +1,16 @@
 #!/bin/bash
 
-cd ..
-
 git clone https://github.com/mastodon/mastodon.git live && cd live
 
 git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 chmod 777 -R /home/mastodon
 
-sudo -u mastodon bundle config deployment 'true'
+bundle config deployment 'true'
 
-sudo -u mastodon bundle config without 'development test'
+bundle config without 'development test'
 
-sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
+bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
