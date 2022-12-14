@@ -10,7 +10,7 @@ bundle config deployment 'true'
 
 bundle config without 'development test'
 
-bundle install -j$(getconf _NPROCESSORS_ONLN)
+sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 yarn install --pure-lockfile
 
