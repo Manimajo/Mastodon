@@ -9,5 +9,5 @@ CREATE USER mastodon CREATEDB;
 
 \q
 
-echo "Out"
 EOF
+echo "Out"
