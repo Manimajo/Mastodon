@@ -4,7 +4,7 @@ git clone https://github.com/mastodon/mastodon.git live && cd live
 
 git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
-chmod 777 -R /home/mastodon
+chmod 777 -R /home/mastodon/*
 
 bundle config deployment 'true'
 
