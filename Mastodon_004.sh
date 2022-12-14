@@ -18,6 +18,12 @@ yarn install --pure-lockfile
 
 chmod 777 -R /home/mastodon
 
+cp /root/Mastodon/live /home/mastodon/live
+
+cp /root/Mastodon/.bundle /home/mastodon/.bundle
+
+cp /root/Mastodon/
+
 sudo -u mastodon RAILS_ENV=production bundle exec rake mastodon:setup
 
 cd /home/mastodon/Mastodon
