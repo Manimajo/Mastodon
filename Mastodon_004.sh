@@ -8,6 +8,8 @@ chmod 777 -R /home/mastodon/*
 
 bundle config deployment 'true'
 
+chmod 777 -R /home/mastodon/*
+
 bundle config without 'development test'
 
 sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
