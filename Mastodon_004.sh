@@ -8,6 +8,8 @@ chmod 777 -R /home/mastodon
 
 cp -R /root/Mastodon/live /home/mastodon/live
 
+chmod 777 -R /home/mastodon
+
 cd /home/mastodon/live
 
 sudo -u mastodon bundle config deployment 'true'
