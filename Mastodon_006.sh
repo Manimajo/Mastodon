@@ -162,4 +162,4 @@ server {
   }
 
   error_page 404 500 501 502 503 504 /500.html;
-}" >> mastodon.cfg
+}" mastodon.cfg
