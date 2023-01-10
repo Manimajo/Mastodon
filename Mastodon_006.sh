@@ -2,8 +2,6 @@ cd /etc/nginx/sites-availlable
 
 rm mastodon
 
-touch mastodon.cfg
-
 echo 'map $http_upgrade $connection_upgrade {
   default upgrade;
   ''      close;
