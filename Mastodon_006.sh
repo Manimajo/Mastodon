@@ -40,8 +40,8 @@ server {
   ssl_session_tickets off;
 
   # Uncomment these lines once you acquire a certificate:
-  # ssl_certificate     /etc/letsencrypt/live/example.com/fullchain.pem;
-  # ssl_certificate_key /etc/letsencrypt/live/example.com/privkey.pem;
+  ssl_certificate     /etc/cert/example.crt;
+  ssl_certificate_key /etc/cert/example.key;
 
   keepalive_timeout    70;
   sendfile             on;
