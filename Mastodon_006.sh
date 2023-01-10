@@ -1,4 +1,4 @@
-cd /etc/nginx/sites-availlable
+cd /etc/nginx/sites-available
 
 rm mastodon.cfg
 
