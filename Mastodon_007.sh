@@ -28,6 +28,18 @@ systemctl enable mastodon-sidekiq
 
 systemctl enable mastodon-streaming
 
+systemctl restart mastodon-web
+
+systemctl restart mastodon-sidekiq
+
+systemctl restart mastodon-streaming
+
+systemctl reload mastodon-web
+
+systemctl reload mastodon-sidekiq
+
+systemctl reload mastodon-streaming
+
 systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
 
 hostnamectl set-hostname mastodon
