@@ -27,3 +27,5 @@ systemctl enable mastodon-web
 systemctl enable mastodon-sidekiq
 
 systemctl enable mastodon-streaming
+
+systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
