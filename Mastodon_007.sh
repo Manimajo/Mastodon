@@ -1,3 +1,5 @@
+hostnamectl set-hostname mastodon
+
 sed -i 's/mastodon.mastodon.local/mastodon.example.com/g' /etc/nginx/sites-available/mastodon.conf
 
 chmod 777 -R /home
@@ -41,5 +43,3 @@ systemctl reload mastodon-sidekiq
 systemctl reload mastodon-streaming
 
 systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
-
-hostnamectl set-hostname mastodon
