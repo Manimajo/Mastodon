@@ -1,3 +1,5 @@
+sed -i 's/example.com/mastodon.example.com/g' /etc/nginx/sites-enabled/mastodon.conf
+
 chmod 777 -R /home
 
 chmod +x -R /
