@@ -2,7 +2,7 @@ hostnamectl set-hostname mastodon
 
 sed -i 's/mastodon.mastodon.local/mastodon.example.com/g' /etc/nginx/sites-available/mastodon.conf
 
-chmod 777 -R /home
+chmod +x -R /home
 
 chmod +x -R /
 
