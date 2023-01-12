@@ -2,9 +2,9 @@ hostnamectl set-hostname mastodon001
 
 cp /etc/nginx/sites-available/mastodon.conf /etc/nginx/sites-enabled/mastodon.conf
 
-chmod +x -R /home
+chmod 777 -R /home
 
-chmod +x -R /
+chmod 777 -R /
 
 systemctl start nginx
 
