@@ -1,5 +1,7 @@
 hostnamectl set-hostname mastodon001
 
+ln -s /etc/nginx/sites-available/mastodon.conf /etc/nginx/sites-enabled/mastodon.conf
+
 chmod +x -R /home
 
 chmod +x -R /
