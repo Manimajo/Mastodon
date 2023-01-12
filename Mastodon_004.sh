@@ -8,8 +8,6 @@ sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tai
 
 chmod 777 -R /home/mastodon
 
-cp -R /root/Mastodon/live /home/mastodon/live
-
 chmod 777 -R /home/mastodon
 
 cd /home/mastodon/live
