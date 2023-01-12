@@ -1,6 +1,6 @@
 hostnamectl set-hostname mastodon
 
-sed -i 's/mastodon.mastodon.local/mastodon.example.com/g' /etc/nginx/sites-available/mastodon.conf
+sed -i 's/mastodon.impulsreha.local/mastodon.example.com/g' /etc/nginx/sites-available/mastodon.conf
 
 chmod +x -R /home
 
