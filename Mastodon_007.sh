@@ -12,6 +12,10 @@ systemctl restart nginx
 
 systemctl reload nginx
 
+gem install puma
+
+gem install sidekiq
+
 cp /home/mastodon/live/dist/mastodon-web.service /etc/systemd/system/
 
 cp /home/mastodon/live/dist/mastodon-sidekiq.service /etc/systemd/system/
