@@ -1,4 +1,4 @@
-hostnamectl set-hostname mastodon
+hostnamectl set-hostname mastodon001
 
 sed -i 's/mastodon.impulsreha.local/mastodon.example.com/g' /etc/nginx/sites-available/mastodon.conf
 
