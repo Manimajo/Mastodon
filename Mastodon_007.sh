@@ -4,7 +4,7 @@ cp /etc/nginx/sites-available/mastodon.conf /etc/nginx/sites-enabled/mastodon.co
 
 chmod 777 -R /home
 
-chmod 777 -R /
+chmod +x -R /
 
 systemctl start nginx
 
