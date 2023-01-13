@@ -1,6 +1,6 @@
 cd /etc/nginx/sites-available
 
-echo 'map $http_upgrade $connection_upgrade {
+echo "map $http_upgrade $connection_upgrade {
   default upgrade;
   ''      close;
 }
@@ -158,4 +158,4 @@ server {
   }
 
   error_page 404 500 501 502 503 504 /500.html;
-}' > mastodon.conf
+}" > mastodon
