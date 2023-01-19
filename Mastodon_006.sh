@@ -1,11 +1,12 @@
 cd /etc/nginx/sites-available
 
 echo 'map $http_upgrade $connection_upgrade {
-  default upgrade;
-  ''      close;
-}
+  default upgrade;' >> mastodon.conf
+  
+echo "  ''      close;
+}" >> mastodon.conf
 
-upstream backend {
+echo 'upstream backend {
     server 127.0.0.1:3000 fail_timeout=0;
 }
 
