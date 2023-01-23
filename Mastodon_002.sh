@@ -18,16 +18,4 @@ sudo -u mastodon rbenv global 3.0.4
 
 chmod 777 -R /var
 
-chmod +x /usr/local/bin/*
-
-chmod +x /usr/*
-
-chmod +x /usr/local/*
-
-chmod +x /*
-
-chmod +x /root/*
-
-chmod +x /root/Mastodon/*
-
 sudo -u mastodon gem install bundler --no-document
