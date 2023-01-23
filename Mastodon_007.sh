@@ -6,12 +6,6 @@ chmod 777 -R /home
 
 chmod +x -R /
 
-systemctl start nginx
-
-systemctl restart nginx
-
-systemctl reload nginx
-
 gem install puma
 
 gem install sidekiq
@@ -47,3 +41,9 @@ systemctl reload mastodon-sidekiq
 systemctl reload mastodon-streaming
 
 systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
+
+systemctl start nginx
+
+systemctl restart nginx
+
+systemctl reload nginx
