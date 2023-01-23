@@ -16,7 +16,7 @@ sudo -u mastodon rbenv install 3.0.4
 
 sudo -u mastodon rbenv global 3.0.4
 
-chmod +x -R /var
+chmod 777 -R /var
 
 chmod +x /usr/local/bin/*
 
