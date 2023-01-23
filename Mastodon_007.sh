@@ -40,6 +40,10 @@ systemctl restart mastodon-sidekiq
 
 systemctl restart mastodon-streaming
 
-systemctl daemon-reload
+systemctl reload mastodon-web
+
+systemctl reload mastodon-sidekiq
+
+systemctl reload mastodon-streaming
 
 systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
