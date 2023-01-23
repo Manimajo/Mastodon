@@ -40,10 +40,10 @@ systemctl reload mastodon-sidekiq
 
 systemctl reload mastodon-streaming
 
-systemctl status mastodon-web mastodon-sidekiq mastodon-streaming
-
 systemctl start nginx
 
 systemctl restart nginx
 
 systemctl reload nginx
+
+systemctl status mastodon-web mastodon-sidekiq mastodon-streaming nginx
