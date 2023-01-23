@@ -6,6 +6,8 @@ chmod 777 -R /home
 
 chmod +x -R /
 
+chmod +x -R /usr/local/bin
+
 gem install puma
 
 gem install sidekiq
