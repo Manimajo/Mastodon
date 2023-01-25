@@ -1,5 +1,7 @@
 #!/bin/bash
 
+chmod 777 -R /var
+
 sudo -u mastodon apt install ruby full
 
 chmod 777 -R /var
