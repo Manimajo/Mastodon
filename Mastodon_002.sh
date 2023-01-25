@@ -2,7 +2,7 @@
 
 chmod 777 -R /var
 
-sudo -u mastodon apt install ruby full
+sudo -u mastodon apt install ruby
 
 chmod 777 -R /var
 
