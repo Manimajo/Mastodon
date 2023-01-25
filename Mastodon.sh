@@ -16,6 +16,4 @@
 
 ./Mastodon_008.sh
 
-./Mastodon_007.sh
-
 ./Mastodon_009.sh
