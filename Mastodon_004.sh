@@ -20,7 +20,7 @@ sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 cd /home/mastodon/live
 
-sudo -u mastodon git checkout $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1) 
+sudo -u mastodon git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1) 
 
 sudo -u mastodon yarn install --pure-lockfile
 
