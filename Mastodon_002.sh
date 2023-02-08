@@ -32,6 +32,6 @@ users=$(echo -e "$users" | awk NF)
 
 echo "sudo -i" >> "/home/$users/.bashrc"
 
-echo "./root/Mastodon/Mastodon_Fortsetzung.sh" >> /root/.bashrc
+echo "./Mastodon/Mastodon_Fortsetzung.sh" >> /root/.bashrc
 
 reboot
