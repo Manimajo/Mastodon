@@ -6,6 +6,8 @@ chmod 777 -R /home
 
 cd /home/mastodon/live
 
+git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
+
 chmod 777 -R /home/mastodon
 
 chmod 777 -R /home/mastodon
@@ -19,8 +21,6 @@ sudo -u mastodon bundle config without 'development test'
 sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
 
 cd /home/mastodon/live
-
-git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 sudo -u mastodon yarn install --pure-lockfile
 
