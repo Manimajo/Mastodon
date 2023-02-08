@@ -1,8 +1,10 @@
 cd /etc/nginx/sites-available
 
+domain=$(read "domain")
+
 echo 'map $http_upgrade $connection_upgrade {
   default upgrade;' >> mastodon.conf
-  
+ 
 echo "  ''      close;
 }" >> mastodon.conf
 
@@ -19,7 +21,7 @@ proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=CACHE:10m inactive=7d max
 server {
   listen 80;
   listen [::]:80;
-  server_name mastodon001.impulsreha.local;
+  server_name $domain;
   root /home/mastodon/live/public;
   location /.well-known/acme-challenge/ { allow all; }
   location / { return 301 https://$host$request_uri; }
