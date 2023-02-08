@@ -1,5 +1,7 @@
 #!/bin/bash
 
+apt install postgresql postgresql-contrib
+
 sudo -u postgres bash <<EOF
 echo "In"
 
