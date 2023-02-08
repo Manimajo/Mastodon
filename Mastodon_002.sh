@@ -22,4 +22,4 @@ chmod 777 -R /var
 
 chmod 777 -R /root
 
-chmod 777 /var/lib/postgresql/15/main
+chmod 0700 /var/lib/postgresql/15/main
