@@ -30,7 +30,7 @@ server {
 server {
   listen 443 ssl http2;
   listen [::]:443 ssl http2;
-  server_name mastodon001.impulsreha.local;
+  server_name $domain;
 
   ssl_protocols TLSv1.2 TLSv1.3;
   ssl_ciphers HIGH:!MEDIUM:!LOW:!aNULL:!NULL:!SHA;
