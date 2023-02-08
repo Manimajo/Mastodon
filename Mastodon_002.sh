@@ -20,4 +20,4 @@ gem install bundler --no-document
 
 chmod 777 -R /var
 
-chmod 777 -R /root/Mastodon/*
+chmod 777 -R /root
