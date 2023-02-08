@@ -63,7 +63,7 @@ server {
   }
 
   # If Docker is used for deployment and Rails serves static files,
-  # then needed must replace line `try_files $uri =404;` with `try_files $uri @proxy;`.
+  # then needed must replace line `try_files \$uri =404;` with `try_files \$uri @proxy;`.
   location = /sw.js {
     add_header Cache-Control \"public, max-age=604800, must-revalidate\";
     add_header Strict-Transport-Security \"max-age=63072000; includeSubDomains\";
