@@ -3,7 +3,7 @@
 sudo -u postgres bash <<EOF
 echo "In"
 
-psql
+sudo -u postgres psql
 
 CREATE USER mastodon CREATEDB;
 
