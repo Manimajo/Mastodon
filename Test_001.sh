@@ -43,3 +43,5 @@ echo "sudo -i" >> /home/$users/.bashrc
 echo "cd /root/Mastodon && ./Test_002.sh" >> /root/.bashrc
 
 adduser --disabled-login mastodon
+
+rboot
