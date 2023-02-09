@@ -50,7 +50,7 @@ server {
   sendfile             on;
   client_max_body_size 80m;
 
-  root /home/mastodon/live/public;
+  root /home/mastodon/live/public; " >> mastodon.conf
   
   echo '
   gzip on;
