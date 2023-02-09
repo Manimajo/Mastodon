@@ -6,6 +6,12 @@ chmod 777 -R /home
 
 cd /home/mastodon/live
 
+sudo -u mastodon gem install puma
+
+sudo -u mastodon gem install sidekiq
+
+sudo -u mastodon gem install webpush
+
 git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 chmod 777 -R /home/mastodon
