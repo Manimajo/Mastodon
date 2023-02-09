@@ -22,11 +22,13 @@ proxy_cache_path /var/cache/nginx levels=1:2 keys_zone=CACHE:10m inactive=7d max
 server {
   listen 80;
   listen [::]:80;
-  server_name $domain;
+  server_name $domain;" >> mastodon.conf
+  
+echo "
   root /home/mastodon/live/public;
   location /.well-known/acme-challenge/ { allow all; }
-  location / { return 301 https://\$host\$request_uri; }
-}
+  location / { return 301 https://$host$request_uri; }
+}" >> mastodon.conf
 
 server {
   listen 443 ssl http2;
