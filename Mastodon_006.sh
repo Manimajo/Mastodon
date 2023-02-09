@@ -30,6 +30,7 @@ echo "
   location / { return 301 https://$host$request_uri; }
 }" >> mastodon.conf
 
+echo "
 server {
   listen 443 ssl http2;
   listen [::]:443 ssl http2;
@@ -59,7 +60,9 @@ server {
   gzip_buffers 16 8k;
   gzip_http_version 1.1;
   gzip_types text/plain text/css application/json application/javascript text/xml application/xml application/xml+rss text/javascript image/svg+xml image/x-icon;
-
+  " >> mastodon.conf
+  
+  echo "
   location / {
     try_files \$uri @proxy;
   }
