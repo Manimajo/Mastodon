@@ -1,7 +1,7 @@
 cd /etc/nginx/sites-available
 
 echo "your domain:"
-domain=$(read "domain")
+read domain
 
 echo 'map $http_upgrade $connection_upgrade {
   default upgrade;' >> mastodon.conf
