@@ -1,5 +1,7 @@
 #!/bin/bash
 
+adduser --disabled-login mastodon << 'yyyyyy'
+
 apt-get update
 
 apt-get upgrade -y
@@ -45,7 +47,5 @@ echo "sudo -i" >> /home/$users/.bashrc
 echo "cd /root/Mastodon" >> /root/.bashrc
 
 echo "./Mastodon_Fortsetzung_001.sh" >> /root/.bashrc
-
-adduser --disabled-login mastodon << 'yyyyyy'
 
 reboot
