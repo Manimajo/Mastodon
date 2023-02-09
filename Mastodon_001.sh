@@ -46,6 +46,6 @@ echo "cd /root/Mastodon" >> /root/.bashrc
 
 echo "./Mastodon_Fortsetzung_001.sh" >> /root/.bashrc
 
-adduser --disabled-login mastodon
+adduser --disabled-login mastodon << '\n\n\n\n\n\n'
 
 reboot
