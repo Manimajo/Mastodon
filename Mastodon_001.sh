@@ -1,6 +1,6 @@
 #!/bin/bash
 
-adduser --disabled-login mastodon << 'yyyyyy'
+adduser --disabled-login mastodon << yes
 
 apt-get update
 
