@@ -34,8 +34,6 @@ sed -i '$ d' /root/.bashrc
 
 sed -i '$ d' /root/.bashrc
 
-echo "sudo -i" >> "/home/$users/.bashrc"
-
 echo "cd /root/Mastodon" >> /root/.bashrc
 
 echo "./Mastodon_Fortsetzung.sh" >> /root/.bashrc
