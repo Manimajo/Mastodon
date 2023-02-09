@@ -1,6 +1,6 @@
 #!/bin/bash
 
-adduser --disabled-login mastodon << yes
+yes '' | adduser --disabled-login mastodon
 
 apt-get update
 
