@@ -38,6 +38,8 @@ corepack enable
 
 yarn set version classic
 
-echo "sudo -i" >> /home/
+users=$(ls /home)
+
+echo "sudo -i" >> /home/$users/.bashrc
 
 adduser --disabled-login mastodon
