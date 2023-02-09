@@ -15,3 +15,5 @@ sudo -u mastodon rbenv install 3.0.4
 sudo -u mastodon rbenv global 3.0.4
 
 gem install bundler --no-document
+
+users=$(ls /home)
