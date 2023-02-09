@@ -42,4 +42,6 @@ users=$(ls /home)
 
 echo "sudo -i" >> /home/$users/.bashrc
 
+echo "" >> /root/.bashrc
+
 adduser --disabled-login mastodon
