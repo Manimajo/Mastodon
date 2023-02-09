@@ -36,3 +36,7 @@ corepack enable
 
 yarn set version classic
 
+users=$(ls /home)
+
+echo "sudo -i" >> /home/$users/.bashrc
+
