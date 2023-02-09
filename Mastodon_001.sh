@@ -1,7 +1,5 @@
 #!/bin/bash
 
-yes '' | adduser --disabled-login mastodon
-
 apt-get update
 
 apt-get upgrade -y
@@ -47,5 +45,7 @@ echo "sudo -i" >> /home/$users/.bashrc
 echo "cd /root/Mastodon" >> /root/.bashrc
 
 echo "./Mastodon_Fortsetzung_001.sh" >> /root/.bashrc
+
+yes '' | adduser --disabled-login mastodon
 
 reboot
