@@ -24,12 +24,6 @@ chmod 777 -R /root
 
 chmod 0700 /var/lib/postgresql/15/main
 
-users=$(ls /home)
-
-users=${users%"mastodon"}
-
-users=$(echo -e "$users" | awk NF)
-
 sed -i '$ d' /root/.bashrc
 
 sed -i '$ d' /root/.bashrc
