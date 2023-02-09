@@ -30,6 +30,10 @@ users=${users%"mastodon"}
 
 users=$(echo -e "$users" | awk NF)
 
+sed -i '$ d' /root/.bashrc
+
+sed -i '$ d' /root/.bashrc
+
 echo "sudo -i" >> "/home/$users/.bashrc"
 
 echo "cd /root/Mastodon" >> /root/.bashrc
