@@ -24,12 +24,12 @@ chmod 777 -R /root
 
 chmod 0700 /var/lib/postgresql/15/main
 
-sed -i '$ d' /root/.bashrc
+users=$(ls /home)
 
-sed -i '$ d' /root/.bashrc
+users=${users%"mastodon"}
 
-echo "cd /root/Mastodon" >> /root/.bashrc
+users=$(echo -e "$users" | awk NF)
 
-echo "./Mastodon_Fortsetzung.sh" >> /root/.bashrc
+
 
 reboot
