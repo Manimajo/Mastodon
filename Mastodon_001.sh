@@ -40,7 +40,9 @@ yarn set version classic
 
 users=$(ls /home)
 
-echo 'gnome-terminal -- sudo -i && cd /root/Mastodon && ./Mastodon_Fortsetzung_001.sh' >> /home/$users/.bashrc
+echo 'gnome-terminal -- sudo -i' >> /home/$users/.bashrc
+
+echo 'gnome-terminal -- cd /root/Mastodon && ./Mastodon_Fortsetzung_001.sh' >> /root/.bashrc
 
 yes '' | adduser --disabled-login mastodon
 
