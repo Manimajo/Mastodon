@@ -40,9 +40,7 @@ yarn set version classic
 
 users=$(ls /home)
 
-echo "gnome-terminal" >> /home/$users/.bashrc
-
-echo "sudo -i" >> /home/$users/.bashrc
+echo 'gnome-terminal -e "sudo -i"' >> /home/$users/.bashrc
 
 echo "cd /root/Mastodon" >> /root/.bashrc
 
