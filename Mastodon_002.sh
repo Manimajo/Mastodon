@@ -30,6 +30,8 @@ users=${users%"mastodon"}
 
 users=$(echo -e "$users" | awk NF)
 
+sed -i '$ d' "/home/$users/.bashrc"
 
+echo 'gnome-terminal -e "sudo -i && cd /root/Mastodon && ./Mastodon_Fortsetung.sh"' >> /home/$users/.bashrc
 
 reboot
