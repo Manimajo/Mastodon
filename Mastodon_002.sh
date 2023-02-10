@@ -32,6 +32,14 @@ users=$(echo -e "$users" | awk NF)
 
 sed -i '$ d' "/home/$users/.bashrc"
 
-echo 'gnome-terminal -e "sudo -i && cd /root/Mastodon && ./Mastodon_Fortsetung.sh"' >> /home/$users/.bashrc
+sed -i '$ d' "/root/.bashrc"
+
+sed -i '$ d' "/root/.bashrc"
+
+echo 'sudo -i' >> /home/$users/.bashrc
+
+echo 'cd /root/Mastodon' >> /root/.bashrc
+
+echo './Mastodon_Fortsetzung.sh' >> /root/.bashrc
 
 reboot
