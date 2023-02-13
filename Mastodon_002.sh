@@ -16,7 +16,7 @@ sudo -u mastodon rbenv install 3.0.4
 
 sudo -u mastodon rbenv global 3.0.4
 
-chmod 777 /var/lib/gems/*
+chmod 777 /var/lib/gems/3.0.0
 
 cd /home/mastodon
 
