@@ -14,6 +14,12 @@ sudo -u mastodon gem install webpush
 
 sudo -u mastodon gem install mini_portile2
 
+sudo -u mastodon gem install webauthn
+
+sudo -u mastodon gem install cose
+
+sudo -u mastodon gem install openssl
+
 git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
 chmod 777 -R /home/mastodon
