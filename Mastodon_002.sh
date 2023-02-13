@@ -18,6 +18,8 @@ sudo -u mastodon rbenv global 3.0.4
 
 chmod 777 /var/lib/gems/3.0.0
 
+chmod 777 /usr/local/bin
+
 cd /home/mastodon
 
 sudo -u mastodon gem update --system
