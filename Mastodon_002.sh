@@ -18,6 +18,8 @@ sudo -u mastodon rbenv global 3.0.4
 
 cd /home/mastodon
 
+sudo -u mastodon gem update --system
+
 sudo -u mastodon gem install bundler --no-document
 
 chmod 777 -R /var
