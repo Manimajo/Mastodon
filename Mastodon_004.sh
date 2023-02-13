@@ -12,7 +12,7 @@ sudo -u mastodon gem install sidekiq
 
 sudo -u mastodon gem install webpush
 
-sudo -u mastodon gem install mini_portile2-2.8.1
+sudo -u mastodon gem install mini_portile2
 
 git checkout -f $(git tag -l | grep -v 'rc[0-9]*$' | sort -V | tail -n 1)
 
