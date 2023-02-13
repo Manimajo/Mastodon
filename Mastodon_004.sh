@@ -20,7 +20,7 @@ chmod 777 -R /home/mastodon
 
 cd /home/mastodon/live
 
-sudo -u mastodon bundle install -y
+sudo -u mastodon bundle install
 
 cd /home/mastodon/live
 
