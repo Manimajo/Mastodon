@@ -20,11 +20,7 @@ chmod 777 -R /home/mastodon
 
 cd /home/mastodon/live
 
-sudo -u mastodon bundle config deployment 'true'
-
-sudo -u mastodon bundle config without 'development test'
-
-sudo -u mastodon bundle install -j$(getconf _NPROCESSORS_ONLN)
+sudo -u mastodon bundle install -y
 
 cd /home/mastodon/live
 
