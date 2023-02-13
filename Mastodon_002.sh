@@ -52,4 +52,4 @@ echo 'cd /root/Mastodon' >> /root/.bashrc
 
 echo './Mastodon_Fortsetzung.sh' >> /root/.bashrc
 
-#reboot
+reboot
