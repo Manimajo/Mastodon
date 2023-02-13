@@ -1,23 +1,5 @@
 #!/bin/bash
 
-users=$(ls /home)
-
-users=${users%"mastodon"}
-
-users=$(echo -e "$users" | awk NF)
-
-sed -i '$ d' "/home/$users/.bashrc"
-
-sed -i '$ d' "/root/.bashrc"
-
-sed -i '$ d' "/root/.bashrc"
-
-echo 'sudo -i' >> /home/$users/.bashrc
-
-echo 'cd /root/Mastodon' >> /root/.bashrc
-
-echo './Mastodon_Fortsetzung.sh' >> /root/.bashrc
-
 git clone https://github.com/rbenv/rbenv.git /home/mastodon/.rbenv
 
 cd /home/mastodon/.rbenv && src/configure && make -C src
@@ -52,4 +34,22 @@ chmod 777 /usr/local/bin
 
 chmod 0700 /var/lib/postgresql/15/main
 
-reboot
+users=$(ls /home)
+
+users=${users%"mastodon"}
+
+users=$(echo -e "$users" | awk NF)
+
+sed -i '$ d' "/home/$users/.bashrc"
+
+sed -i '$ d' "/root/.bashrc"
+
+sed -i '$ d' "/root/.bashrc"
+
+echo 'sudo -i' >> /home/$users/.bashrc
+
+echo 'cd /root/Mastodon' >> /root/.bashrc
+
+echo './Mastodon_Fortsetzung.sh' >> /root/.bashrc
+
+#reboot
